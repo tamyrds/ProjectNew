@@ -2,6 +2,7 @@
 
 Library    SeleniumLibrary
 Resource    ./variableShares.robot
+Resource    generics.robot
 
 
 *** Keywords ***
@@ -21,5 +22,4 @@ Entrar no menu "Eletrônicos"
     Click Element    ${ELETRONICO}
     Wait Until Page Contains    Eletrônicos e Tecnologia
 
-Verificar se o título da página fica "Eletrônicos e Tecnologia Amazon.com.br"
-    Title Should Be          Eletrônicos e Tecnologia | Amazon.com.br
+    Validar categoria    Computadores e Informática         
