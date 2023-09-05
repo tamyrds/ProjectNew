@@ -1,7 +1,7 @@
 ***Settings***
 
 Library    SeleniumLibrary
-
+Resource   ../web/variableShares.robot
 
 *** Keywords ***
 
@@ -17,3 +17,15 @@ Validar categoria
     [Arguments]                    ${CATEGORIA}
     Wait Until Page Contains       ${CATEGORIA}
 
+Clicar no campo de pesquisas
+    Click Element                  ${CAMPO_PESQUISA}
+
+Digita produto no campo pesquisa
+    Input Text    ${CAMPO_PESQUISA}    Xbox Series S
+
+Clica no botão pesquisar
+    Click Button    ${BOTAO_PESQUISAR}
+
+Aguarde elemento mostrar em tela
+    [Arguments]        ${TEXT}
+    Wait Until Page Contains    ${TEXT}

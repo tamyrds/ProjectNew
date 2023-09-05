@@ -23,3 +23,14 @@ Entrar no menu "Eletrônicos"
     Wait Until Page Contains    Eletrônicos e Tecnologia
 
     Validar categoria    Computadores e Informática         
+
+Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+    Clicar no campo de pesquisas
+    Digita produto no campo pesquisa
+
+Clicar no botão de pesquisa
+    Clica no botão pesquisar
+    
+Verificar o resultado da pesquisa, listando o produto pesquisado
+    Aguarde elemento mostrar em tela    Resultados
+    
