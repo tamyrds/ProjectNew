@@ -36,3 +36,6 @@ CT3 - Adicionar produto na sacola
     Clicar no botão de pesquisa
     Verificar o resultado da pesquisa, listando o produto pesquisado
     Clica no produto    ${PRODUTO_XBOX}
+    Aguarde elemento mostrar em tela    Adicionar ao carrinho
+    Clica no botão    ${ADD_CARRINHO}
+    Aguarde elemento mostrar em tela    Adicionado ao carrinho

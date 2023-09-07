@@ -32,6 +32,10 @@ Aguarde elemento mostrar em tela
 
 Clica no produto
     [Arguments]    ${PRODUTO_XBOX}
-    
+
     Aguarde elemento mostrar em tela    Xbox Series S
     Click Image    ${PRODUTO_XBOX}
+
+Clica no botão
+    [Arguments]     ${BOTAO}
+    Click Button    ${BOTAO}
