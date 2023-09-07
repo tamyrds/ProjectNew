@@ -29,3 +29,26 @@ Clica no botão pesquisar
 Aguarde elemento mostrar em tela
     [Arguments]        ${TEXT}
     Wait Until Page Contains    ${TEXT}
+
+Clica no produto
+    [Arguments]    ${PRODUTO_XBOX}
+
+    Aguarde elemento mostrar em tela    Xbox Series S
+    Click Image    ${PRODUTO_XBOX}
+
+Clica no botão
+    [Arguments]     ${BOTAO}
+    Click Button    ${BOTAO}
+
+Clica no elemento com texto
+    [Arguments]             ${ELEMENT}
+    Click Element          ${ELEMENT}
+
+Digite seu email 
+    Input Text     ${INPUT_EMAIL}        teste@teste.com
+    Click Button   ${BOTAO_CONTINUAR}
+
+Digite sua senha
+    Input Password    ${INPUT_PASSWORD}    1234
+    Click Button    ${FAZER_LOGIN}
+    Sleep            5
