@@ -47,8 +47,8 @@ Clica no elemento com texto
 Digite seu email 
     Input Text     ${INPUT_EMAIL}        teste@teste.com
     Click Button   ${BOTAO_CONTINUAR}
-    Sleep            5
 
 Digite sua senha
     Input Password    ${INPUT_PASSWORD}    1234
+    Click Button    ${FAZER_LOGIN}
     Sleep            5
