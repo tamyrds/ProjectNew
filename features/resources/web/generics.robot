@@ -39,3 +39,16 @@ Clica no produto
 Clica no botão
     [Arguments]     ${BOTAO}
     Click Button    ${BOTAO}
+
+Clica no elemento com texto
+    [Arguments]             ${ELEMENT}
+    Click Element          ${ELEMENT}
+
+Digite seu email 
+    Input Text     ${INPUT_EMAIL}        teste@teste.com
+    Click Button   ${BOTAO_CONTINUAR}
+    Sleep            5
+
+Digite sua senha
+    Input Password    ${INPUT_PASSWORD}    1234
+    Sleep            5

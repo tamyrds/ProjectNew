@@ -39,3 +39,12 @@ CT3 - Adicionar produto na sacola
     Aguarde elemento mostrar em tela    Adicionar ao carrinho
     Clica no botão    ${ADD_CARRINHO}
     Aguarde elemento mostrar em tela    Adicionado ao carrinho
+
+CT04 - fazer login site amazon
+    [Tags]           login_sucesso
+
+    Acessar a home page do site Amazon.com.br
+    Clica no elemento com texto          ${LOGIN}
+    Aguarde elemento mostrar em tela     Fazer login
+    Digite seu email            
+    Digite sua senha
