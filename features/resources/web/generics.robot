@@ -29,3 +29,9 @@ Clica no botão pesquisar
 Aguarde elemento mostrar em tela
     [Arguments]        ${TEXT}
     Wait Until Page Contains    ${TEXT}
+
+Clica no produto
+    [Arguments]    ${PRODUTO_XBOX}
+    
+    Aguarde elemento mostrar em tela    Xbox Series S
+    Click Image    ${PRODUTO_XBOX}
