@@ -51,10 +51,11 @@ Digite seu email
 
 Digite sua senha
     
-    Input Password    ${INPUT_PASSWORD}    1234
+
+    Input Password    ${INPUT_PASSWORD}    12345
     Click Button      ${FAZER_LOGIN}
     Sleep                5
 
 Deve apresentar mensagem de senha invalido
-    [Arguments]        ${SENHA_INVALIDA}
+    [Arguments]             ${SENHA_INVALIDA}
     Should Be String        ${SENHA_INVALIDA}

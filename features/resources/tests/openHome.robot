@@ -47,5 +47,5 @@ CT04 - fazer login invalido site amazon
     Clica no elemento com texto          ${LOGIN}
     Aguarde elemento mostrar em tela     Fazer login
     Digite seu email            
-    Digite sua senha
+    Digite sua senha   
     Deve apresentar mensagem de senha invalido    "Sua senha está incorreta"
