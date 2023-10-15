@@ -1,6 +1,7 @@
 ***Settings***
 
 Library    SeleniumLibrary
+Library    String
 Resource   ../web/variableShares.robot
 
 *** Keywords ***
@@ -49,6 +50,12 @@ Digite seu email
     Click Button   ${BOTAO_CONTINUAR}
 
 Digite sua senha
-    Input Password    ${INPUT_PASSWORD}    1234
-    Click Button    ${FAZER_LOGIN}
-    Sleep            5
+    
+
+    Input Password    ${INPUT_PASSWORD}    12345
+    Click Button      ${FAZER_LOGIN}
+    Sleep                5
+
+Deve apresentar mensagem de senha invalido
+    [Arguments]             ${SENHA_INVALIDA}
+    Should Be String        ${SENHA_INVALIDA}

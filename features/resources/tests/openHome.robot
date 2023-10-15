@@ -40,11 +40,12 @@ CT3 - Adicionar produto na sacola
     Clica no botão    ${ADD_CARRINHO}
     Aguarde elemento mostrar em tela    Adicionado ao carrinho
 
-CT04 - fazer login site amazon
-    [Tags]           login_sucesso
+CT04 - fazer login invalido site amazon
+    [Tags]           login_invalido
 
     Acessar a home page do site Amazon.com.br
     Clica no elemento com texto          ${LOGIN}
     Aguarde elemento mostrar em tela     Fazer login
     Digite seu email            
-    Digite sua senha
+    Digite sua senha   
+    Deve apresentar mensagem de senha invalido    "Sua senha está incorreta"
