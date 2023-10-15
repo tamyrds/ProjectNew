@@ -14,5 +14,5 @@ ${ADD_CARRINHO}       id:add-to-cart-button
 ${LOGIN}              id:nav-tools
 ${INPUT_EMAIL}        id:ap_email
 ${BOTAO_CONTINUAR}    id:continue
-${INPUT_PASSWORD}     name:password
+${INPUT_PASSWORD}     id:ap_password
 ${FAZER_LOGIN}        id:signInSubmit
